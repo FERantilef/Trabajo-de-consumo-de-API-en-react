@@ -10,7 +10,7 @@ function PostsList() {
         const data = await response.json();
         setPosts(data);
       } catch (error) {
-        console.error(error);
+        console.error("Error al obtener data:", error);
       }
     };
 
